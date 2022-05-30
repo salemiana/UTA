@@ -22,7 +22,7 @@ function getApi() {
         listItem.textContent = data[i].html_url;
 
         // Append the li element to the id associated with the ul element.
-        repoList.appendChild(listItem);
+        var listItem = document.createElement('li');
       }
     });
 }
