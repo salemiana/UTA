@@ -1,0 +1,18 @@
+DROP DATABASE IF EXISTS inventory_db;
+CREATE DATABASE inventory_db;
+
+USE inventory_db;
+
+CREATE TABLE Students(
+id INTEGER(20) PRIMARY KEY,
+first_Name VARCHAR(20) NOT NULL, 
+last_Name VARCHAR(20) NOT NULL,
+age INTEGER(2) NOT NULL
+);
+
+
+CREATE TABLE Schools(
+id INTEGER(20) PRIMARY KEY,
+school_Name VARCHAR(20) NOT NULL, 
+rate INTEGER(5) NOT NULL,
+);
