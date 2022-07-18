@@ -9,14 +9,22 @@ function binarySearch(array, element) {
     let mid = Math.floor((start + end) / 2);
 
     if (array[mid] === element) {
+<<<<<<< HEAD
       return;
+=======
+      return true;
+>>>>>>> 600a836c048e65e5d76a35b9f726aba116177d14
     } else if (array[mid] < element) {
       start = mid + 1;
     } else {
       end = mid - 1;
     }
   }
+<<<<<<< HEAD
   return;
+=======
+  return false;
+>>>>>>> 600a836c048e65e5d76a35b9f726aba116177d14
 }
 
 console.log(binarySearch(arr, 7));
